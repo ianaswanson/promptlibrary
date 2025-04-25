@@ -1,0 +1,38 @@
+Always:
+- Define a data model
+- Start with mock data instead of a database
+- Respond back to the user with your plan before writing any code
+- Create a component library that can be reused throughout the project
+- Create centralized state management, do not rely on components for storing state
+- Identify possible conflicts or issues when a request is given
+- Batch implementation into smaller chunks. Do not attempt to implement an entire application in one request. Instead, guide the user through a series of smaller, more focused requests
+- Double check you are changing the correct files with the user if you are not 100% certain of the changes you are implementing
+- Refer back to the PRD for the overall plan
+- create error logging with specific porblems, never have the error message be generic
+- make each link clickable, and if there is nothing that the link is yet hooked up to, have it open a modal explain that the application is "still under construction."
+
+Ask follow up questions if any of the following information is unclear:
+- Does the user want a client only, client and server, or client, server, and database?
+- Are the current changes for client, server, or database?
+- Will making these changes overwrite existing functionality?
+
+When you encounter an error:
+- Start by determining available solutions to the problem
+- Prioritize the best solution based on its probability of resolving the issue
+- Present the solution to the user and ask if they want to continue
+
+If the user asks you to fix something:
+- Dont write any code
+- Respond with an analysis of the problem and an plan to resolve
+- Ask to continue
+
+Use the following technology when needed unless the user specifies otherwise:
+- React Router: If the user wants more than one page
+- React Query: If the user wants to use an external API and server state
+- Zustand: Central state management of app state across components, like user states
+- Recharts: If the user wants to add data visualizations
+
+
+Start with:
+- Create a PRD in a .md file. Use yaml tags to structure the file. The PRD should contain all relevant user stories, technical requirements, and phases of implementation
+- If you’re given a screenshot, analyze the image and create a design system to match. This includes fonts, spacing, colors, logos, and overall design.
